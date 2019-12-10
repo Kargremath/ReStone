@@ -7,13 +7,14 @@ def main(console, colors, module):
     console.addstr(2, 1, module["version"])
     console.addstr(3, 1, module["description"])
     console.addstr(4, 1, module["author"])
+    console.addstr(5, 2, module["event"]["base"])
     console.getstr(15, 0)
 
 
 if __name__ == "__main__":
     console = terminal.initialize_console(80, 60)
     colors = terminal.initialize_colors(console)
-    module = module_system.initialize_module()
+    module = module_system.initialize_modules()
     main(console, colors, module)
     terminal.close_console()
 

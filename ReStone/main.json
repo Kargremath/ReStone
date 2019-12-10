@@ -2,5 +2,6 @@
 	"name": "ReStone",
 	"version": "0.0.1",
 	"description": "You wake up in stone world",
-	"author": "Kargremath"
+	"author": "Kargremath",
+	"includes": ["ReStone\\event.json"]
 }
